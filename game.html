@@ -12,20 +12,30 @@ Cost: <span id="cursorCost">10</span>
 <button id="cursorbutton"> Buy a cursor </button>
 
 
+<div class="class">
+    <script type="text/javascript">
+        var press = 0;
+        function updateOutput() {
+            document.getElementById("output").innerHTML = press;
+        }
+    </script>
+    <button type="button" onClick="press++;updateOutput();" id="push">CLICK.</button>
 
-
-
+<div class="class1">
+    <script type="text/javascript">
+        var press = 0;
+        function updateOutput() {
+            document.getElementById("cursors").innerHTML = press;
+        }
+    </script>
+    <button type="button" onClick="press--;updateOutput();" id="push1">CLICK.</button>
 
 <div style="position:relative;left:180px;top:180px;">
       
 
-<img src="https://pbs.twimg.com/profile_images/378800000394521004/3657e9d3ef627be00c24deb7d1c09c19.jpeg" id="target" type="button"> --CLICK </img>
 
 <div id="output">0</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
    <script type="text/javascript" src="game.js"></script>
    
    <script type="text/javascript">
